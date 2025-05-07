@@ -12,7 +12,6 @@ const [repeatCount, setRepeatCount] = useState(0);
 const [totalCharsSpoken, setTotalCharsSpoken] = useState(0);
 const [isAnalyzing, setIsAnalyzing] = useState(false);
 const [isPlaying, setIsPlaying] = useState(false);
-const [isCancelled, setIsCancelled] = useState(false);
 
 useEffect(() => {
   if (!textInput) {
