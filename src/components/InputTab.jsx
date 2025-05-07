@@ -268,7 +268,6 @@ const analyzeText = async () => {
       window.responsiveVoice.cancel();
     }
     setIsPlaying(false);
-    setIsCancelled(true); // Đặt cờ hủy
     setRepeatCount(0);
     console.log('stopAudio called');
   };
