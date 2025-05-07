@@ -212,7 +212,6 @@ const analyzeText = async () => {
     }
 
     setIsPlaying(true);
-    setIsCancelled(false); // Reset cờ hủy
 
     const playNext = (index) => {
       if (index >= sentenceData.length) {
