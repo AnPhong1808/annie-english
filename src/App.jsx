@@ -7,6 +7,7 @@ import './App.css';
 function App() {
   const [telegramReady, setTelegramReady] = useState(false);
   const [textInput, setTextInput] = useState(''); // Thêm state để quản lý textInput
+  const [dialogueCache, setDialogueCache] = useState({ textInput: null, dialogueData: null }); // Cache for DialogueTab
   const location = useLocation();
 
   useEffect(() => {
@@ -39,26 +40,15 @@ function App() {
             </Link>
           </nav>
           <Routes>
-            <Route
-              path="/"
-              element={<InputTab textInput={textInput} setTextInput={setTextInput} />}
-            />
-            <Route
-              path="/dialogue"
-              element={<DialogueTab textInput={textInput} />}
-            />
+            <Route path="/" element={<InputTab />} />
+            <Route path="/dialogue" element={<DialogueTab textInput={textInput} dialogueCache={dialogueCache} setDialogueCache={setDialogueCache} />}/>
           </Routes>
         </>
       ) : (
         <div className="error-message">Đang tải Telegram Web App...</div>
       )}
-      <footer className="footer">
-        Copyright by <a href="https://responsivevoice.org">TadaUp</a> - Power by <a href="https://responsivevoice.org">ResponsiveVoice</a>
-      </footer>
     </div>
-    
   );
-  
 }
 
 export default App;

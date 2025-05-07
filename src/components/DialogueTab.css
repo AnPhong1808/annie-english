@@ -1,0 +1,148 @@
+.dialogue-container {
+  flex: 1;
+}
+
+.dialogue-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.dialogue-item.dark-blue {
+  background-color: #027bd7;
+  color: #fff;
+}
+
+.dialogue-item.white {
+  background-color: #fff;
+  color: #000;
+}
+
+.dialogue-item.user-hint {
+  opacity: 0.5;
+}
+
+.dialogue-english {
+  font-weight: 350;
+}
+
+.dialogue-vietnamese {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.dialogue-grammar {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #d1d5db;
+  margin: 0.5rem 0;
+}
+
+.audio-controls {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.practice-button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.practice-button:hover {
+  background-color: #2563eb;
+}
+
+.play-dialogue-button,
+.stop-dialogue-button,
+.record-button,
+.next-button {
+  flex: 1;
+  padding: 0.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.play-dialogue-button {
+  background-color: #10b981;
+}
+
+.play-dialogue-button:hover {
+  background-color: #059669;
+}
+
+.stop-dialogue-button {
+  background-color: #ef4444;
+}
+
+.stop-dialogue-button:hover {
+  background-color: #dc2626;
+}
+
+.record-button {
+  background-color: #8b5cf6;
+}
+
+.record-button.recording {
+  background-color: #a78bfa;
+}
+
+.record-button:hover {
+  background-color: #7c3aed;
+}
+
+.next-button {
+  background-color: #f59e0b;
+}
+
+.next-button:hover {
+  background-color: #d97706;
+}
+
+.recording-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error-message {
+  text-align: center;
+  color: #ef4444;
+}
